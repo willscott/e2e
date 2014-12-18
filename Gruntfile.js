@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     gitclone: {
       e2e: {
         options: {
-          repository: 'https://code.google.com/p/end-to-end.build/'
+          repository: 'https://github.com/google/end-to-end.git'
         }
       }
     },
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     gitpull: {
       e2e: {
         options: {
-          cwd: 'end-to-end.build/'
+          cwd: 'end-to-end/'
         }
       }
     },
@@ -28,17 +28,17 @@ module.exports = function(grunt) {
     // Dependencies: unzip, svn, Python 2.X, Java >= 1.7
     shell: {
       doDeps: {
-        command: 'bash ./end-to-end.build/do.sh install_deps'
+        command: 'bash ./end-to-end/do.sh install_deps'
       },
       doLib: {
-        command: 'bash ./end-to-end.build/do.sh build_library'
+        command: 'bash ./end-to-end/do.sh build_library'
       }
     },
 
     copy: {
       dist: {
         files: [ {
-          src: ['end-to-end.build/build/library/end-to-end.compiled.js'],
+          src: ['end-to-end/build/library/end-to-end.compiled.js'],
           dest: 'end-to-end.compiled.js',
           onlyIf: 'modified'
         } ]
