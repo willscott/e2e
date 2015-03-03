@@ -44,8 +44,11 @@ module.exports = function(grunt) {
         } ]
       }
     },
+
+    clean: ['end-to-end/', 'end-to-end.build/']
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-force');
   grunt.loadNpmTasks('grunt-git');
