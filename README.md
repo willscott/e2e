@@ -1,7 +1,7 @@
 End-to-End
 ==========
 
-[End-to-End](https://code.google.com/p/end-to-end/) is an OpenPGP compatible
+[End-to-End](https://github.com/google/end-to-end) is an OpenPGP compatible
 library for cryptography.
 
 This is an NPM packaging of the current library version, for use in node or
