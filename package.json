@@ -1,6 +1,6 @@
 {
   "name": "e2e",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "end-to-end helps you encrypt, decrypt, digital sign, and verify signed messages within the browser using OpenPGP.",
   "main": "end-to-end.compiled.js",
   "repository": {
@@ -25,9 +25,10 @@
   "homepage": "https://github.com/willscott/e2e",
   "devDependencies": {
     "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "~0.8.0",
     "grunt-force": "~1.0.0",
-    "grunt-git": "~0.3.2",
-    "grunt-contrib-copy": "~0.7.0",
-    "grunt-shell": "~1.1.1"
+    "grunt-git": "~0.3.4",
+    "grunt-shell": "~1.1.2"
   }
 }
