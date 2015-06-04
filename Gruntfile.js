@@ -104,6 +104,17 @@ module.exports = function(grunt) {
     'shell:doLib',
     'copy:dist'
   ]);
+  
+  grunt.registerTask('release', function (arg) {
+    if (arguments.length === 0) {
+      arg = 'patch';
+    }
+    grunt.task.run([
+      'prompt:tagMessage',
+      'bump:' + arg,
+      'npm-publish'
+    ]);
+  });
 
   grunt.registerTask('default', ['build']);
 }
