@@ -1,6 +1,6 @@
 {
   "name": "e2e",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "end-to-end helps you encrypt, decrypt, digital sign, and verify signed messages within the browser using OpenPGP.",
   "main": "end-to-end.compiled.js",
   "repository": {
