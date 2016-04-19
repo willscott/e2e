@@ -31,14 +31,14 @@ module.exports = function(grunt) {
         command: 'bash ./end-to-end/do.sh install_deps'
       },
       doLib: {
-        command: 'bash ./end-to-end/do.sh build_library'
+        command: 'bash ./end-to-end/do.sh build_library_ctx1'
       }
     },
 
     copy: {
       dist: {
         files: [ {
-          src: ['end-to-end/build/library/end-to-end.compiled.js'],
+          src: ['end-to-end/build/library/end-to-end-ctx1.compiled.js'],
           dest: 'end-to-end.compiled.js',
           onlyIf: 'modified'
         } ]
